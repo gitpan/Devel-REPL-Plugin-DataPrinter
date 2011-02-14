@@ -1,0 +1,24 @@
+---
+abstract: 'Format results with Data::Printer'
+author:
+  - 'Breno G. de Oliveira <garu@cpan.org>'
+build_requires:
+  File::Find: 0
+  File::Temp: 0
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.31
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110440'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Devel-REPL-Plugin-DataPrinter
+requires:
+  Data::Printer: 0.03
+  Devel::REPL::Plugin: 0
+resources:
+  homepage: http://github.com/garu/Devel-REPL-Plugin-DataPrinter/tree
+  repository: git://github.com/garu/Devel-REPL-Plugin-DataPrinter.git
+version: 0.001
