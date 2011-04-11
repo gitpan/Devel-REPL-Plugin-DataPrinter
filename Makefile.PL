@@ -9,7 +9,7 @@ use ExtUtils::MakeMaker 6.31;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Format results with Data::Printer',
+  'ABSTRACT' => 'Format REPL results with Data::Printer',
   'AUTHOR' => 'Breno G. de Oliveira <garu@cpan.org>',
   'BUILD_REQUIRES' => {
     'File::Find' => '0',
@@ -24,10 +24,10 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'Devel::REPL::Plugin::DataPrinter',
   'PREREQ_PM' => {
-    'Data::Printer' => '0.03',
+    'Data::Printer' => '0.08',
     'Devel::REPL::Plugin' => '0'
   },
-  'VERSION' => '0.001',
+  'VERSION' => '0.002',
   'test' => {
     'TESTS' => 't/*.t'
   }

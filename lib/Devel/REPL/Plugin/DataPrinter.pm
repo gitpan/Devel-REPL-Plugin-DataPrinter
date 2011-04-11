@@ -1,13 +1,13 @@
 package Devel::REPL::Plugin::DataPrinter;
 BEGIN {
-  $Devel::REPL::Plugin::DataPrinter::VERSION = '0.001';
+  $Devel::REPL::Plugin::DataPrinter::VERSION = '0.002';
 }
-# ABSTRACT: Format results with Data::Printer
+# ABSTRACT: Format REPL results with Data::Printer
 use strict;
 use warnings;
 
 use Devel::REPL::Plugin;
-use Data::Printer 0.03;
+use Data::Printer 0.08;
 
 around 'format_result' => sub {
    my $orig = shift;
@@ -39,17 +39,17 @@ around 'format_result' => sub {
 
 =head1 NAME
 
-Devel::REPL::Plugin::DataPrinter - Format results with Data::Printer
+Devel::REPL::Plugin::DataPrinter - Format REPL results with Data::Printer
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
 In your re.pl config file (usually C<< ~/.re.pl/repl.rc >>):
 
-    $_REPL->load_plugin('DataPrinter');
+    load_plugin('DataPrinter');
 
 That's about it. Your re.pl should now give you nicer outputs :)
 

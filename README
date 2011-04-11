@@ -1,9 +1,9 @@
 
 
 This archive contains the distribution Devel-REPL-Plugin-DataPrinter,
-version 0.001:
+version 0.002:
 
-  Format results with Data::Printer
+  Format REPL results with Data::Printer
 
 This software is copyright (c) 2011 by Breno G. de Oliveira.
 
