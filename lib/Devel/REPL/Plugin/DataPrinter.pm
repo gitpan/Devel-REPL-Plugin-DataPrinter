@@ -1,13 +1,13 @@
 package Devel::REPL::Plugin::DataPrinter;
 BEGIN {
-  $Devel::REPL::Plugin::DataPrinter::VERSION = '0.002';
+  $Devel::REPL::Plugin::DataPrinter::VERSION = '0.003';
 }
 # ABSTRACT: Format REPL results with Data::Printer
 use strict;
 use warnings;
 
 use Devel::REPL::Plugin;
-use Data::Printer 0.08;
+use Data::Printer 0.14 { colored => 1 };
 
 around 'format_result' => sub {
    my $orig = shift;
@@ -43,7 +43,7 @@ Devel::REPL::Plugin::DataPrinter - Format REPL results with Data::Printer
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -55,6 +55,7 @@ That's about it. Your re.pl should now give you nicer outputs :)
 
 =head1 SEE ALSO
 
+* L<Data::Printer>
 * L<Devel::REPL>
 * L<Devel::REPL::Plugin::DDS>
 

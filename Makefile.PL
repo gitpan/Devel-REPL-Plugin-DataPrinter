@@ -24,10 +24,10 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'Devel::REPL::Plugin::DataPrinter',
   'PREREQ_PM' => {
-    'Data::Printer' => '0.08',
+    'Data::Printer' => '0.14',
     'Devel::REPL::Plugin' => '0'
   },
-  'VERSION' => '0.002',
+  'VERSION' => '0.003',
   'test' => {
     'TESTS' => 't/*.t'
   }

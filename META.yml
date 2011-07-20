@@ -9,16 +9,16 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.31
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110910'
+generated_by: 'Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110930'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Devel-REPL-Plugin-DataPrinter
 requires:
-  Data::Printer: 0.08
+  Data::Printer: 0.14
   Devel::REPL::Plugin: 0
 resources:
   homepage: http://github.com/garu/Devel-REPL-Plugin-DataPrinter/tree
   repository: git://github.com/garu/Devel-REPL-Plugin-DataPrinter.git
-version: 0.002
+version: 0.003

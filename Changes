@@ -1,10 +1,15 @@
 Revision history for Devel-REPL-Plugin-DataPrinter
 
+0.003     2011-07-20
+
+    - fixed autocoloring issue (stanislaw)
+
 0.002     2011-04-11
 
     - updating version dependency
     - improving documentation
 
-0.001   2011-02-14
+
+0.001     2011-02-14
 
     - releasing on an unsuspecting world
