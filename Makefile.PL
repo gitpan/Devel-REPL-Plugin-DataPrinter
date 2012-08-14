@@ -4,32 +4,34 @@ use warnings;
 
 
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Format REPL results with Data::Printer',
-  'AUTHOR' => 'Breno G. de Oliveira <garu@cpan.org>',
-  'BUILD_REQUIRES' => {
-    'File::Find' => '0',
-    'File::Temp' => '0',
-    'Test::More' => '0'
+  "ABSTRACT" => "Format REPL results with Data::Printer",
+  "AUTHOR" => "Breno G. de Oliveira <garu\@cpan.org>",
+  "BUILD_REQUIRES" => {
+    "File::Find" => 0,
+    "File::Temp" => 0,
+    "Test::More" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Devel-REPL-Plugin-DataPrinter',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'Devel::REPL::Plugin::DataPrinter',
-  'PREREQ_PM' => {
-    'Data::Printer' => '0.14',
-    'Devel::REPL::Plugin' => '0'
+  "DISTNAME" => "Devel-REPL-Plugin-DataPrinter",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Devel::REPL::Plugin::DataPrinter",
+  "PREREQ_PM" => {
+    "Data::Printer" => 0,
+    "Devel::REPL::Plugin" => 0,
+    "strict" => 0,
+    "warnings" => 0
   },
-  'VERSION' => '0.003',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.004",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 
