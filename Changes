@@ -1,5 +1,9 @@
 Revision history for Devel-REPL-Plugin-DataPrinter
 
+0.006     2013-03-07
+
+    - minor pod fixes and updates
+
 0.005     2013-03-07
 
     - new custom option: 'stringify' to control
