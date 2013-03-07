@@ -1,6 +1,6 @@
 package Devel::REPL::Plugin::DataPrinter;
 {
-  $Devel::REPL::Plugin::DataPrinter::VERSION = '0.004';
+  $Devel::REPL::Plugin::DataPrinter::VERSION = '0.005';
 }
 # ABSTRACT: Format REPL results with Data::Printer
 use strict;
@@ -27,7 +27,9 @@ around 'format_result' => sub {
    );
    if (@to_dump != 1 || ref $to_dump[0]) {
       if (@to_dump == 1) {
-         if ( overload::Method($to_dump[0], '""') ) {
+         if ( (!exists $config{stringify}{ref $to_dump[0]}
+                 && overload::Method($to_dump[0], '""'))
+             or $config{stringify}{ref $to_dump[0]} ) {
             $out = "@to_dump";
          }
          else {
@@ -45,6 +47,7 @@ around 'format_result' => sub {
 
 1;
 
+__END__
 
 =pod
 
@@ -54,7 +57,7 @@ Devel::REPL::Plugin::DataPrinter - Format REPL results with Data::Printer
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 
@@ -88,6 +91,22 @@ C<use_prototypes> and C<return_value>.  Note that C<dataprinter_config> only
 applies to the printing that the REPL does; if you invoke C<p()> in your REPL
 session yourself, these settings are B<not> applied.
 
+=head2 Devel::REPL::Plugin::DataPrinter specific customization
+
+=over
+
+=item stringify
+
+If the reference being printed has a stringification overloaded method and you
+do not want to use it by default, you can configure an override by setting the
+package to zero:
+
+    $_REPL->dataprinter_config({
+      stringify => {
+        'DateTime' => 0,
+      },
+    });
+
 =head1 SEE ALSO
 
 * L<Devel::REPL>
@@ -105,7 +124,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
-

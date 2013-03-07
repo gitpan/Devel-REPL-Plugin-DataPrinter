@@ -7,6 +7,11 @@ README
 dist.ini
 lib/Devel/REPL/Plugin/DataPrinter.pm
 t/00-compile.t
+t/00_use.t
+t/01_stringify.t
+t/lib/Mock/NonStringify.pm
+t/lib/Mock/Stringify.pm
+t/lib/Term/ReadLine/Mock.pm
 t/release-has-version.t
 t/release-minimum-version.t
 t/release-pod-coverage.t
