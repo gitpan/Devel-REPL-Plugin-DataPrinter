@@ -1,6 +1,6 @@
 package Devel::REPL::Plugin::DataPrinter;
 {
-  $Devel::REPL::Plugin::DataPrinter::VERSION = '0.006';
+  $Devel::REPL::Plugin::DataPrinter::VERSION = '0.007';
 }
 # ABSTRACT: Format REPL results with Data::Printer
 use strict;
@@ -57,7 +57,7 @@ Devel::REPL::Plugin::DataPrinter - Format REPL results with Data::Printer
 
 =head1 VERSION
 
-version 0.006
+version 0.007
 
 =head1 SYNOPSIS
 

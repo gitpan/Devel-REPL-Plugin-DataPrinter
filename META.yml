@@ -25,4 +25,4 @@ requires:
 resources:
   homepage: https://github.com/garu/Devel-REPL-Plugin-DataPrinter
   repository: https://github.com/garu/Devel-REPL-Plugin-DataPrinter.git
-version: 0.006
+version: 0.007
